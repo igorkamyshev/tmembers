@@ -1,0 +1,29 @@
+{
+  "name": "tmembers",
+  "version": "1.0.0",
+  "description": "Simple script to get the number of channel subscribers in the Telegram",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "eslint lib --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorkamyshev/tmembers.git"
+  },
+  "keywords": [
+    "telegram"
+  ],
+  "author": "Igor Kamyshev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igorkamyshev/tmembers/issues"
+  },
+  "homepage": "https://github.com/igorkamyshev/tmembers#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@solid-soda/eslint-config": "^2.1.6",
+    "eslint": "^5.7.0"
+  }
+}
