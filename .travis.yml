@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '8'
+cache: yarn
+script: yarn test
+before_deploy: yarn
+deploy:
+  provider: npm
+  email: igor@kamyshev.me
+  api_key:
+    secure: dICOv1eCQdaZh1EUfF5L3kaqVUCH2KrVPOsncqDP9c2PCcWDHvCxq1DwLo2zNHI1VQu/K6oDKbHzNBkpySb7Ev9QvbqG7c98lAzli9sraW0xU7qYAjLjIwkQIz/z3Em/IFR29RfIFlhnlpnK+YwUBFl3g87kRwNBy7VFkRyWllykCXK5xiA4pVemC9vOPS9ZojbwiFT+tno7XS9ZSClLGQeANIXjWL5LmQ3vpGLszNhur/8OVsXPTh9j8b7rRI1jVU3UOUA88zj/muxnTTzNGub7NGa+MYia9lycgTxJn8VaYBiKPr48kkr/DY9Pnq16M6TWUqg2NWmM8Bsf590MquQSThEEdojOMzHaKarir+eKxv4KuAcE7+Da+AN1f79P4BliNwP1g3o8tS/sdXNlGoeHkGA1076puqoTIiIUcZququC33pSkJfIuSso88dd6tNqcIWOfFvKnrD8y/T34/YU/j0asAiVjsmbX8USeazzwGTNrc3PHyl0sj63k3HsJV6qx8yqsg/9b30C2eXqTkfS6NZNGrP6Z/BtPh7AZYscVGMoWmtc+FyzKhAUoKj3Yaobx8Ibfwrw4z+SmziGSn4rlzTIzVz5rSqfiYVHM4F1xFxd9Nl7xxEbmdsfHszgXYLTUKggwhrWsLD3rmAtsYe4iqURO7Yw4jPdyCscTdiM=
+  on:
+    tags: true
+    repo: igorkamyshev/tmembers
