@@ -4,8 +4,8 @@
   "description": "Simple script to get the number of channel subscribers in the Telegram",
   "main": "build/index.js",
   "scripts": {
-    "ci": "yarn s lint",
-    "s": "yarn soda"
+    "s": "yarn soda",
+    "postinstall": "yarn soda post-install"
   },
   "repository": {
     "type": "git",
@@ -24,27 +24,13 @@
     "axios": "^0.18.0"
   },
   "devDependencies": {
-    "@solid-soda/scripts": "^1.0.7"
+    "@solid-soda/scripts": "^1.1.2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "yarn soda lint-staged",
+      "commit-msg": "yarn soda commitlint"
     }
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "yarn soda lint"
-    ],
-    "*.{js,jsx,ts,tsx,css,json}": [
-      "yarn soda pretty",
-      "git add"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   },
   "publishConfig": {
     "access": "public"
