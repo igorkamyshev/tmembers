@@ -1,6 +1,6 @@
 {
   "name": "tmembers",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple script to get the number of channel subscribers in the Telegram",
   "main": "build/index.js",
   "scripts": {
