@@ -4,8 +4,7 @@
   "description": "Simple script to get the number of channel subscribers in the Telegram",
   "main": "build/index.js",
   "scripts": {
-    "s": "yarn soda",
-    "postinstall": "yarn soda post-install"
+    "s": "yarn soda"
   },
   "repository": {
     "type": "git",
@@ -24,7 +23,7 @@
     "axios": "^0.18.0"
   },
   "devDependencies": {
-    "@solid-soda/scripts": "^1.1.2"
+    "@solid-soda/scripts": "^1.1.3"
   },
   "husky": {
     "hooks": {
