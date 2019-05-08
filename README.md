@@ -26,6 +26,6 @@ tmembers('code_for', 1000).then(count => console.log(count));
  
 ### Docs
  
-`tmembers` accepts two parameters — `channel` and `fallback` for translating. If fetching will fail, it returns fallback value. Function returns Promise{number}.
+`tmembers` accepts two parameters — `channel` and `fallback`. If fetching will fail, it returns fallback value. Function returns Promise{number}.
  
 That's all. Enjoy!
